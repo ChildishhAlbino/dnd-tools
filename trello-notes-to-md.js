@@ -32,7 +32,7 @@ async function writeFilesForEntries(entries) {
         content += `# ${sessionName} Notes:\n`
 
         sessionNotes.forEach(note => {
-            content += `- ${note}`
+            content += `- ${note}\n`
         })
 
         await writeFile(`output/${sessionName}.md`, content)
